@@ -70,7 +70,7 @@
                                     const openIssues = issueData.filter(issue => issue.state === 'open').length;
                                     // Calculate the maintenance score
                                     const maintenanceScore = ((commitsPastYear / 52) * 0.5) + ((closedIssues / (openIssues + closedIssues)) * 0.5);
-                                    link.append(` ⭐ ${stars} | Maintenance: ${Math.round(maintenanceScore * 100)}%`); // Use the saved jQuery object
+                                    link.append(` ⭐ ${stars} | 🔄: ${Math.round(maintenanceScore * 100)}%`); // Use the saved jQuery object
                                 }
                             });
                         }

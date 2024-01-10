@@ -1,5 +1,5 @@
 # monkey-stars
-monkey-stars is a Tampermonkey script that enhances your browsing experience by providing essential metrics about GitHub repositories directly from your browser. It displays the number of stars a repository has received and calculates a maintenance score based on the number of commits made in the past year and the ratio of closed to open issues.
+monkey-stars is a Tampermonkey script that enhances your browsing experience by providing essential metrics about GitHub repositories directly from your browser. It displays the number of stars a repository has received and calculates a maintenance score (🔄 emoji) based on the number of commits made in the past year and the ratio of closed to open issues.
 
 ## Installation
 
