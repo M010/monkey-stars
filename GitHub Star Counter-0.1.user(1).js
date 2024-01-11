@@ -13,7 +13,7 @@
     'use strict';
 
     const baseUrl = 'https://api.github.com/repos';
-    const token = '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'; // Replace with your PAT
+    const token = 'TOKEN_YOUR'; // Replace with your PAT
 
 
     $('a[href^="https://github.com/"]').each(function() {
@@ -53,8 +53,8 @@
                             let commitsPastYear = 0;
                             if (Array.isArray(commitData)) {
                                 // Calculate the number of commits in the past year
-                                commitsPastYear = commitData.reduce((sum, week) => sum + week.total, 0);
-                            }
+                                commitsPastYear = commitData.filter(week => week.total !== 0).length;
+                            
                             // Fetch issue data
                             GM_xmlhttpRequest({
                                 method: "GET",
