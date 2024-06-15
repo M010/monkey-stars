@@ -54,7 +54,7 @@
                             if (Array.isArray(commitData)) {
                                 // Calculate the number of commits in the past year
                                 commitsPastYear = commitData.filter(week => week.total !== 0).length;
-                            
+                            }
                             // Fetch issue data
                             GM_xmlhttpRequest({
                                 method: "GET",
